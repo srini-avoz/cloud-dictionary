@@ -264,8 +264,9 @@ function onCompositionUpdate(ev: CompositionEvent) {
           @mouseenter="searchBtnHovered = true" 
           @mouseleave="searchBtnHovered = false"
         >
-          <a 
+          <button 
             id="search-query-button" 
+            role="button"
             aria-label="Search" 
             tabindex="-1" 
             class="cursor-pointer"
@@ -284,7 +285,7 @@ function onCompositionUpdate(ev: CompositionEvent) {
                 clip-rule="evenodd"
               />
             </svg>
-          </a>
+          </button>
         </section>
       </section>
       <section 
